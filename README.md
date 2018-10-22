@@ -21,15 +21,14 @@ This project is a mixup of different other sources to provide the following
 - [Waveshare 4.2" EPD Black/White](https://www.waveshare.com/wiki/4.2inch_e-Paper_Module)
 -  Wuxi Vision Peak Technology "WF0402T8DCF1300E4" used in Samsung s-label electronic shelf label (E2X-ST-GM42001) (needs adapter)
 
-#### WF0402T8DCF1300E4 specific!!
+## WF0402T8DCF1300E4 specific!!
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **WARNING**
 
->>>
-**WARNING**
 
-When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in reverse.
+>When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in >reverse.
 
-**Not doing so might brick your display**
->>>
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **Not doing so might brick your display**
+
 
 ## Software/Libraries used
 
