@@ -83,6 +83,8 @@ To have maximum power saving, the Li-Ion battery (4.2V-3.0V) is connected direct
 
 The used LDO on the Wemos D1 Mini is a 75mV dropout type, so running down the battery to about 2.9V will still powering the ESP8266 well enough.
 
+Quiscent power consumption is then about 30-35uA while sleeping.
+
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **WARNING**
 
 > Always disconnect the battery when using USB-programming to avoid damaging the battery by overvoltage.
