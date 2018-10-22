@@ -2,13 +2,14 @@
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=1bwpUlR_0Uc" target="_blank"><img src="http://img.youtube.com/vi/1bwpUlR_0Uc/0.jpg" alt="4.2 EPD E-Paper WiFi ESP8266 Weather Station and Google Calendar" width="480" height="360" border="10" /></a>
 
-This project is a mixup of different other sources to provide the following
+This project is a mixup of different other sources/projects to provide the following
 
 - ESP8266 based info screen with 
 - 4.2" EPD electronic paper display like from [https://www.waveshare.com/wiki/4.2inch_e-Paper_Module](Waveshare) to
 - showing actual weather from openweathermap.org (needs API key) and
 - showing appointments from Google calendar (needs script at Google site)
 
+The initially project is an older Version of the ["ESP32 4.2 ePaper Weather Display"](https://github.com/G6EJD/ESP32-42e-Paper-Weather-Display-) by [David Bird](http://g6ejd.dynu.com). Back in the days this was made to be used with the WeatherUnderground API. As WeatherUnderground dropped its free API access the script needed to be adapted for a different weather provider, so i managed to adapt it for the use with [OpenWeatherMap](https://openweathermap.org).
 ## Hardware used
 
 - Wemos D1 Mini PCB (or clone) - any ESP8266 will most likely do if enough GPIO are available to connect the Display in 4-Wire-SPI-Mode
