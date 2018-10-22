@@ -1,13 +1,18 @@
 # ESP8266 EPD Weather & Google Calendar
 
+Project Page on [360customs.de](http://www.360customs.de/2018/07/4-2-epd-e-ink-display-esp8266-wetter-google-kalender/)
+
+<a href="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0119.jpg" target="_blank"><img src="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0119.jpg" alt="WF0402T8DCF1300E4 FFC modification" width="480" height="640" border="10" />
+
+### Youtube Demonstration
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=1bwpUlR_0Uc" target="_blank"><img src="http://img.youtube.com/vi/1bwpUlR_0Uc/0.jpg" alt="4.2 EPD E-Paper WiFi ESP8266 Weather Station and Google Calendar" width="480" height="360" border="10" /></a>
 
 This project is a mixup of different other sources/projects to provide the following
 
 - ESP8266 based info screen with 
-- 4.2" EPD electronic paper display like from [https://www.waveshare.com/wiki/4.2inch_e-Paper_Module](Waveshare) to
-- showing actual weather from openweathermap.org (needs API key) and
-- showing appointments from Google calendar (needs script at Google site)
+- 4.2" EPD electronic paper display like from [Waveshare](https://www.waveshare.com/wiki/4.2inch_e-Paper_Module),  [Dalian Good Display](http://www.e-paper-display.com) or [Weifeng / Wuxi Vision Peak Technology](http://www.wf-tech.com/en/about.asp?id=1) to
+- show actual weather from openweathermap.org (needs API key) and
+- show appointments from Google calendar (needs script at Google site)
 
 The initially project is an older Version of the ["ESP32 4.2 ePaper Weather Display"](https://github.com/G6EJD/ESP32-42e-Paper-Weather-Display-) by [David Bird](http://g6ejd.dynu.com). Back in the days this was made to be used with the WeatherUnderground API. As WeatherUnderground dropped its free API access the script needed to be adapted for a different weather provider, so i managed to adapt it for the use with [OpenWeatherMap](https://openweathermap.org).
 ## Hardware used
@@ -31,7 +36,7 @@ The initially project is an older Version of the ["ESP32 4.2 ePaper Weather Disp
 > <a href="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" target="_blank"><img src="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" alt="WF0402T8DCF1300E4 FFC modification" width="640" height="640" border="10" />
 > 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **Not doing so might brick your display**
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **Not doing so will brick your display**
 
 ## Software/Libraries used
 
