@@ -25,10 +25,35 @@ This project is a mixup of different other sources to provide the following
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **WARNING**
 
 
->When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in >reverse.
+>When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in reverse.
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **Not doing so might brick your display**
 
+### Display Mapping
+
+Mapping suggestion taked from GxEPD library.
+
+#### Wemos D1 Mini <-> Display SPI
+
+- BUSY -> D2
+- RST -> D4
+- DC -> D3
+- CS -> D8
+- CLK -> D5
+- DIN -> D7
+- GND -> GND
+- 3.3V -> 3.3V
+
+#### Generic ESP8266 <-> Display SPI
+
+- BUSY -> GPIO4
+- RST -> GPIO2
+- DC -> GPIO0
+- CS -> GPIO15
+- CLK -> GPIO14
+- DIN -> GPIO13
+- GND -> GND
+- 3.3V -> 3.3V
 
 ## Software/Libraries used
 
