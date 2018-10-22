@@ -26,34 +26,11 @@ This project is a mixup of different other sources to provide the following
 
 
 >When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in reverse.
+>
+> <a href="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" target="_blank"><img src="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" alt="WF0402T8DCF1300E4 FFC modification" width="640" height="640" border="10" />
+> 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **Not doing so might brick your display**
-
-### Display Mapping
-
-Mapping suggestion taked from GxEPD library.
-
-#### Wemos D1 Mini <-> Display SPI
-
-- BUSY -> D2
-- RST -> D4
-- DC -> D3
-- CS -> D8
-- CLK -> D5
-- DIN -> D7
-- GND -> GND
-- 3.3V -> 3.3V
-
-#### Generic ESP8266 <-> Display SPI
-
-- BUSY -> GPIO4
-- RST -> GPIO2
-- DC -> GPIO0
-- CS -> GPIO15
-- CLK -> GPIO14
-- DIN -> GPIO13
-- GND -> GND
-- 3.3V -> 3.3V
 
 ## Software/Libraries used
 
@@ -71,6 +48,44 @@ Mapping suggestion taked from GxEPD library.
 ## Setup
 ### Hardware
 #### Display Connection
+
+Mapping suggestion taked from GxEPD library.
+
+##### Wemos D1 Mini <-> Display SPI
+
+- BUSY -> D2
+- RST -> D4
+- DC -> D3
+- CS -> D8
+- CLK -> D5
+- DIN -> D7
+- GND -> GND
+- 3.3V -> 3.3V
+
+##### Generic ESP8266 <-> Display SPI
+
+- BUSY -> GPIO4
+- RST -> GPIO2
+- DC -> GPIO0
+- CS -> GPIO15
+- CLK -> GPIO14
+- DIN -> GPIO13
+- GND -> GND
+- 3.3V -> 3.3V
+
+#### Sleep-Mode/HW-Reset
+
+To have the watchdog reseting the ESP8266 a connection from D0 (GPIO16) to RST needed. Use either a resistor [with a value lower than 350ohms or a schottky diode](https://github.com/universam1/iSpindel/issues/59#issuecomment-300329050). A direct connection with resistor/diode renders the code upload/reset functionality useless/non-working.
+
+#### Maximum power saving
+
+To have maximum power saving, the Li-Ion battery (4.2V-3.0V) is connected directly to the 5V line. Using the USB-input always enables the USB-UART-IC (CH340A) which pulls several mA even if not having an open connection. (This is due to some voltage greater than 0.0V on D+/D-) This isn't the case when using either an USB-cable without D+/D- connected or by connecting the battery directly. The latter also saves power by avoiding conversation losses from a battery-powerbank-solution where the battery voltage first is stepped/boosted-up to 5V before getting into the Wemos D1 Mini which then brings down the voltage to 3.3V by an LDO.
+
+The used LDO on the Wemos D1 Mini is a 75mV dropout type, so running down the battery to about 2.9V will still powering the ESP8266 well enough.
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **WARNING**
+
+> Always disconnect the battery when using USB-programming to avoid damaging the battery by overvoltage.
 
 ### Software
 #### Google Script
