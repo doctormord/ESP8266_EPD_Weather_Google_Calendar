@@ -58,7 +58,7 @@ int32_t const timeout = 2000;
 int const GoogleServerMaxRetry = 1; //maximum tries to reach google server.
 
 // define buffersize for several buffers - needs to be tidy, otherwise HTTPS crashs due to low free heap
-int const bufferSize = 1250;
+int const bufferSize = 1350;
 
 // #define DEBUG
 #ifdef DEBUG
