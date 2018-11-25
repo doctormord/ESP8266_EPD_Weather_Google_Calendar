@@ -47,7 +47,7 @@ unsigned long getNTPTimestamp()
   udp.begin(ntpPort);
   sendNTPpacket(timeServer); // send an NTP packet to a time server
 //  delay(1000);    // wait to see if a reply is available
-  delay(100);    // wait to see if a reply is available - changed from 1000
+  delay(200);    // wait to see if a reply is available - changed from 1000
 
   int cb=0, repeat=0; 
   while(!cb && repeat<20)  // try for 2 sec
