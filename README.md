@@ -31,7 +31,7 @@ The initially project is an older Version of the ["ESP32 4.2 ePaper Weather Disp
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) **WARNING**
 
 
->When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - so pinout order is in reverse.
+>When using the **WF0402T8DCF1300E4** (like from Samsung E2X-ST-GM42001 ESL) an connection adapter, which is [available from >Waveshare](https://www.waveshare.com/wiki/E-Paper_Driver_HAT), is needed. To make the Display work, it is needed to salvage >the FFC connector from the Samsung PCB and solder it in place of the original connector on the "E-Paper Driver Hat" because >the **WF0402T8DCF1300E4** has pad connections on the opposite side than the WaveShare displays - pins/contacts facing down, not up. If you just plug in the displays FFC downside up, you'll break the display. Refer to the following picture:
 >
 > <a href="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" target="_blank"><img src="http://www.360customs.de/wp-content/uploads/2018/07/IMG_0129.jpg" alt="WF0402T8DCF1300E4 FFC modification" width="640" height="640" border="10" />
 > 
