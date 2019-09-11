@@ -40,14 +40,18 @@ The initially project is an older Version of the ["ESP32 4.2 ePaper Weather Disp
 
 ## Software/Libraries used
 
-- [ESP8266 Arduino](https://github.com/esp8266/Arduino)
-- [GxEPD](https://github.com/ZinggJM/GxEPD)
-- [Adafruit GFX Fonts](https://github.com/adafruit/Adafruit-GFX-Library)
-- [Timezone](https://github.com/JChristensen/Timezone)
+- [ESP8266 Arduino](https://github.com/esp8266/Arduino) - 2.4.2
+- [GxEPD](https://github.com/ZinggJM/GxEPD) - 2.3.14
+- [Adafruit GFX Fonts](https://github.com/adafruit/Adafruit-GFX-Library) - 1.3.6
+- [Timezone](https://github.com/JChristensen/Timezone) - 1.2.0
+- Time - 1.5.0
 - time_ntp.h - NTP & time routines for ESP8266 for ESP8266 adapted Arduino IDE by Stefan Thesen 05/2015
-- [ArduinoJSON](https://github.com/bblanchon/ArduinoJson)
-- [HTTPSRedirect](https://github.com/electronicsguy/ESP8266/tree/master/HTTPSRedirect)
-- [ESP8266 Arduino WiFiManager](https://github.com/tzapu/WiFiManager)
+- [ArduinoJSON](https://github.com/bblanchon/ArduinoJson) - 5.13.5
+- [HTTPSRedirect](https://github.com/electronicsguy/ESP8266/tree/master/HTTPSRedirect) - 2.0
+- [ESP8266 Arduino WiFiManager](https://github.com/tzapu/WiFiManager) - 0.14.0
+- Watchdog - 1.2.0
+- WebSockets - 2.1.1
+- 
 
 - [Google Script Code](https://script.google.com/home)
 
